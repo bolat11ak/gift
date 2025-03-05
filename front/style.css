@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: url('image/gift.jpg') no-repeat center top fixed;
+    background-size: 85% auto;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+
+main h2 {
+    color: black !important;
+    font-weight: 600;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.header-right {
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+
+.sign-in {
+    text-decoration: none;
+    color: #ff6b6b;
+    font-weight: 500;
+}
+
+#menu-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.dropdown-menu.open {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    background: #f4f4f4;
+}
+
+
+main {
+    margin-top: 100px;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    background: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.button:hover {
+    background: #e63946;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+.sign-in-form, .sign-up-form {
+    color: black !important;
+}
+
+
+.sign-in-form label,
+.sign-up-form label {
+    color: black !important;
+    font-weight: 500;
+}
+
+
+.sign-in-form input,
+.sign-up-form input {
+    color: black !important;
+    border: 1px solid #ccc;
+}
+
+
+.sign-in-form input::placeholder,
+.sign-up-form input::placeholder {
+    color: #555 !important;
+    opacity: 1;
+}
+
